@@ -1,0 +1,129 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "Sobre mim",
+    "carrer": "Carreira",
+    "projects": "Projetos"
+  },
+  "hero": {
+    "saudation": "Opa, me chamo",
+    "saudation2": "e crio aplicações fantásticas e optimizadas.",
+    "description": "Sou Desenvolvedor Android, Palestrante e Criador de conteúdo no",
+    "mentoringButton": "Participar da mentoria",
+    "cvButton": "Baixar meu currículo"
+  },
+  "about": {
+    "title": "Sobre mim",
+    "content": "Como já devem ter reparado, o meu nome é Lucas Alvarenga, ou também conhecido como Alvarenga! Sou um desenvolvedor Android autodidata altamente motivado e experiente, com quase 4 anos de experiência no desenvolvimento de aplicativos móveis de alta qualidade. Forte capacidade de projetar, desenvolver e testar aplicativos Android, com conhecimento profundo de linguagens de programação, bibliotecas e frameworks relevantes. Excelente capacidade de resolução de problemas, colaboração em equipa e auto-gestão. Procuro contribuir para o sucesso da empresa fornecendo soluções eficientes no desenvolvimento Android.. <br /><br /> Comecei a programar aos 13 anos, precisamente com Android, mas utilizando Java em 2017. Como eu estava perto de entrar no ensino médio, queria cursar uma escola técnica. Então, no ano seguinte, me matriculei na escola técnica Rezende Rammel para fazer um curso de informática. Foram 3 anos incríveis, pois aumentei meus conhecimentos na área. Mesmo focando bastante em Java e, posteriormente, em Kotlin, pude ter contato com outras linguagens como JavaScript, Php, C, Pascal e Frameworks como React.Js e Flutter. <br /><br /> Quando o ano de 2020 chegou, eu estava decidido a começar minha carreira como desenvolvedor Android de uma vez por todas, então passei por muitos processos seletivos e entrevistas até conseguir um estágio e ser contratado em apenas 3 meses. Nesse meio tempo, sou criador de conteúdo de tecnologia desde agosto de 2019, onde “documentei” minha jornada de estudante a desenvolvedor de software. <br /><br />"
+  },
+  "carrer": {
+    "title": "Carreira",
+    "description": "Abaixo está um resumo do meu currículo, experiência profissional e educação.",
+    "experiencesTitle": "Experiências Profissionais",
+    "experiences": {
+      "experience1": {
+        "title": "Desenvolvedor Android",
+        "list": "Modularização e implementação da arquitetura MVVM | Bibliotecas do Android Jetpack | Detekt | AWS | Jira | Acessibilidade",
+        "local": "Itaú (@BRQ)",
+        "icon": "/itau.svg",
+        "startAt": "Dez 2023",
+        "endAt": "Atualmente"
+      },
+      "experience2": {
+        "title": "Desenvolvedor Android Pleno",
+        "list": "Modularização e aplicação da arquitetura MVVM | Criação de testes unitários com JUnit 5 e MockK | Bibliotecas do Android Jetpack | Participação no processo de Design/Discovery | Integração com RESTful APIs | Detekt",
+        "local": "Bornlogic",
+        "icon": "/bornlogic.svg",
+        "startAt": "Jul 2022",
+        "endAt": "Mai 2023"
+      },
+      "experience3": {
+        "title": "Desenvolvedor Android júnior",
+        "list": "Criação de novas funcionalidades definidas pela equipe | Unit tests with JUnit 5 + MockK | Android Jetpack libs | Detekt | Integração com RESTful APIs | Zendesk integration",
+        "local": "Bornlogic",
+        "icon": "/bornlogic.svg",
+        "startAt": "Jan 2021",
+        "endAt": "Jul 2022"
+      },
+      "experience4": {
+        "title": "Desenvolvedor Android Estagiário",
+        "list": "Criação de novas funcionalidades e correção de bugs | Firebase (Crashlytics, Messaging, App Distribution...) | Android Jetpack libs | Picasso | Glide | Android Jetpack libs",
+        "local": "Bornlogic",
+        "icon": "/bornlogic.svg",
+        "startAt": "Set 2020",
+        "endAt": "Dez 2020"
+      }
+    },
+    "educationsTitle": "Educação",
+    "educations": {
+      "education1": {
+        "title": "Técnico em informática",
+        "description": "A ETRR ajuda-me a aprender sobre tecnologia. Tive a oportunidade de aprender desenvolvimento front-end, back-end e mobile.",
+        "local": "Escola técnica Rezende Rammel (ETRR), Brazil",
+        "icon": "/itau.svg",
+        "startAt": "2018",
+        "endAt": "2020"
+      },
+      "education2": {
+        "title": "Estudo vários cursos todos os anos",
+        "description": "Eu nunca paro de aprender! Acredito que a aprendizagem contínua é essencial para desbloquear o nosso potencial num mundo em constante mudança.",
+        "local": "",
+        "icon": "/itau.svg",
+        "startAt": "2017",
+        "endAt": "Sempre!"
+      }
+    }
+  },
+  "projects": {
+    "title": "Projetos",
+    "description": "Aqui está uma galeria com alguns projectos que desenvolvi ao longo do tempo.",
+    "project1": {
+      "name": "Marketplace List",
+      "description": "Esta simples aplicação de lista de compras irá ajuda-lo a criar a sua lista e saber o valor final da compra!",
+      "link": "https://play.google.com/store/apps/details?id=com.alvarengadev.marketplacelist",
+      "image": "/images/marketplace-list.png",
+      "technologies": "MVVM | Dagger Hilt | Firebase Crashlytics"
+    },
+    "project2": {
+      "name": "Movies Reviews",
+      "description": "Your/Dev Processo Seletivo 2020 - Desenvolvedor Android",
+      "link": "https://github.com/Alvarenga-Dev/Movie-Reviews",
+      "image": "/images/movies-review.png",
+      "technologies": "Retrofit | Live Data | Room"
+    },
+    "project3": {
+      "name": "AlvaFlix",
+      "description": "Uma piada com o meu sobrenome Alvarenga com netflix",
+      "link": "https://github.com/Alvarenga-Dev/Alvaflix",
+      "image": "/images/alvaflix.png",
+      "technologies": "MVVM | Koin | Componentes Customizados"
+    },
+    "project4": {
+      "name": "Crypto - UI/UX",
+      "description": "Projeto fictício do Curso Felipe Santanas Figma (FEUX), com o objetivo de aprimorar meus conhecimentos na ferramenta Figma e também em UI e UX.",
+      "link": "https://www.figma.com/file/ei4iys8RFNzlXNswPVsBpI/Feux---NFT-App?node-id=404%3A5462",
+      "image": "/images/crypto.png",
+      "technologies": "Figma | Components | Create Flows"
+    },
+    "project5": {
+      "name": "AlvaMessager",
+      "description": "Nesta aplicação foi capaz de trabalhar mais profundamente com o firebase, utilizando-o como um meio de criar uma nova aplicação de mensagens (acho que no liceu não era criativo com os nomes).",
+      "link": "https://github.com/Alvarenga-Dev/Alva-Messenger",
+      "image": "/images/alvamessager.png",
+      "technologies": "Kotlin | Firebase"
+    },
+    "project6": {
+      "name": "Time to Sleep",
+      "description": "Este projeto foi desenvolvido quando eu estava no 2º ano do ensino médio, com o objetivo de ser um despertador para surdos!",
+      "link": "https://github.com/Alvarenga-Dev/Time-to-Sleep",
+      "image": "/images/time-to-sleep.png",
+      "technologies": "Conexão Bluetooth | Arq. MVP | Java"
+    }
+  },
+  "footer": {
+    "message": "'Não devemos fazer coisas à espera de algo em troca. <br /> Faça o que tem de ser feito e a recompensa virá naturalmente a seu tempo.'",
+    "socialLinks": "Redes sociais",
+    "copyright": "Copyright alvarenga.dev. Todos os direitos reservados",
+    "developedBy": "Desenhado e desenvolvido por"
+  }
+}
