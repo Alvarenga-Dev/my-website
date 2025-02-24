@@ -7,14 +7,14 @@
   },
   "hero": {
     "saudation": "Opa, me chamo",
-    "saudation2": "e crio aplicações fantásticas e optimizadas.",
-    "description": "Sou Desenvolvedor Android, Palestrante e Criador de conteúdo no",
-    "mentoringButton": "Participar da mentoria",
+    "saudation2": "e crio aplicações perfomáticas e escaláveis.",
+    "description": "Sou Desenvolvedor Mobile, Palestrante e Criador de conteúdo no",
+    "mentoringButton": "Tenha uma mentoria",
     "cvButton": "Baixar meu currículo"
   },
   "about": {
     "title": "Sobre mim",
-    "content": "Como já devem ter reparado, o meu nome é Lucas Alvarenga, ou também conhecido como Alvarenga! Sou um desenvolvedor Android autodidata altamente motivado e experiente, com quase 4 anos de experiência no desenvolvimento de aplicativos móveis de alta qualidade. Forte capacidade de projetar, desenvolver e testar aplicativos Android, com conhecimento profundo de linguagens de programação, bibliotecas e frameworks relevantes. Excelente capacidade de resolução de problemas, colaboração em equipa e auto-gestão. Procuro contribuir para o sucesso da empresa fornecendo soluções eficientes no desenvolvimento Android.. <br /><br /> Comecei a programar aos 13 anos, precisamente com Android, mas utilizando Java em 2017. Como eu estava perto de entrar no ensino médio, queria cursar uma escola técnica. Então, no ano seguinte, me matriculei na escola técnica Rezende Rammel para fazer um curso de informática. Foram 3 anos incríveis, pois aumentei meus conhecimentos na área. Mesmo focando bastante em Java e, posteriormente, em Kotlin, pude ter contato com outras linguagens como JavaScript, Php, C, Pascal e Frameworks como React.Js e Flutter. <br /><br /> Quando o ano de 2020 chegou, eu estava decidido a começar minha carreira como desenvolvedor Android de uma vez por todas, então passei por muitos processos seletivos e entrevistas até conseguir um estágio e ser contratado em apenas 3 meses. Nesse meio tempo, sou criador de conteúdo de tecnologia desde agosto de 2019, onde “documentei” minha jornada de estudante a desenvolvedor de software. <br /><br />"
+    "content": "Se você já me conhece, sabe que meu nome é Lucas Alvarenga, mas muita gente também me chama de Alvarenga! Sou um desenvolvedor Android autodidata, com 5 anos de experiência criando aplicativos de alta qualidade. Tenho uma forte habilidade em projetar, desenvolver e testar apps Android, além de um conhecimento sólido em linguagens de programação, bibliotecas e frameworks essenciais para o ecossistema. Gosto de resolver problemas, trabalhar em equipe e me autogerenciar para entregar soluções eficientes no desenvolvimento Android.<br /><br /> Comecei a programar aos 13 anos, justamente com Android, usando Java lá em 2017. Como estava perto de entrar no ensino médio, queria estudar em uma escola técnica. No ano seguinte, me matriculei na Rezende Rammel para cursar informática. Foram três anos incríveis, onde aprofundei meus conhecimentos, especialmente em Java e, depois, em Kotlin. Além disso, tive contato com outras linguagens como JavaScript, PHP, C e Pascal, além de frameworks como React.js e Flutter.<br /><br /> Em 2020, decidi de vez que queria seguir carreira como desenvolvedor Android. Passei por vários processos seletivos e entrevistas até conseguir meu primeiro estágio, e em apenas três meses fui efetivado. Paralelamente, desde agosto de 2019, venho criando conteúdo sobre tecnologia, documentando minha jornada de estudante a desenvolvedor de software.<br />"
   },
   "carrer": {
     "title": "Carreira",
@@ -23,15 +23,15 @@
     "experiences": {
       "experience1": {
         "title": "Desenvolvedor Android",
-        "list": "Modularização e implementação da arquitetura MVVM | Bibliotecas do Android Jetpack | Detekt | AWS | Jira | Acessibilidade",
+        "list": "Modularização e implementação da arquitetura MVVM | Bibliotecas do Android Jetpack | CI/CD | AWS | Firebase | Acessibilidade | Robot Framework | Android | iOS",
         "local": "Itaú (@BRQ)",
         "icon": "/itau.svg",
         "startAt": "Dez 2023",
         "endAt": "Atualmente"
       },
       "experience2": {
-        "title": "Desenvolvedor Android Pleno",
-        "list": "Modularização e aplicação da arquitetura MVVM | Criação de testes unitários com JUnit 5 e MockK | Bibliotecas do Android Jetpack | Participação no processo de Design/Discovery | Integração com RESTful APIs | Detekt",
+        "title": "Desenvolvedor Android",
+        "list": "Modularização e aplicação da arquitetura MVVM | Criação de testes unitários com JUnit 5 e MockK | Bibliotecas do Android Jetpack | Participação no processo de Design/Discovery | Integração com RESTful APIs | Injeção de Dependência com Koin",
         "local": "Bornlogic",
         "icon": "/bornlogic.svg",
         "startAt": "Jul 2022",

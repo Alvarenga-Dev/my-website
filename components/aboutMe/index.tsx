@@ -3,7 +3,7 @@ import { SocialsLinks } from '@/content/data'
 import { openLink } from '@/utils/utils'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
-import AboutImage from '../../public/images/aboutMe.svg'
+import AboutImage from '../../public/images/about_me.svg'
 
 const AboutMe = () => {
   const t = useTranslations('about')
@@ -15,13 +15,11 @@ const AboutMe = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
         <div className="md:order-2">
           <p
-            className="text-white-100 text-sm md:!text-base lg:text-lg"
+            className="text-white-100 text-sm md:!text-base lg:text-lg mb-3"
             dangerouslySetInnerHTML={{ __html: t.raw('content') }}
           ></p>
 
-          <div
-            className="flex gap-5 md:mt-2 cursor-pointer"
-          >
+          <div className="flex gap-5 md:mt-2 cursor-pointer">
             {SocialsLinks.map((item, index) => {
               const Icon = item.icon
               return (
@@ -36,7 +34,7 @@ const AboutMe = () => {
           </div>
         </div>
 
-        <Image className="mt-4 md:order-1 md:mt-0 h-fit" src={AboutImage} alt="About Me" priority quality={100} />
+        <Image className="mt-4 md:order-1 md:mt-0 object-cover rounded-lg" src={AboutImage} alt="About Me" priority quality={100} />
       </div>
     </section>
   )

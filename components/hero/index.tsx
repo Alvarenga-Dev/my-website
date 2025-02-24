@@ -42,13 +42,9 @@ const Hero: React.FC = () => {
         </p>
 
         <div
-          className="flex items-center justify-center lg:justify-normal gap-6 mt-7"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-offset="300"
-        >
+          className="flex items-center justify-center lg:justify-normal gap-6 mt-7">
           <Button
-            onClick={() => openLink('https://superpeer.com/alvarengadev')}
+            onClick={() => openLink('https://go.hotmart.com/P98009168Q?dp=1')}
             color="primary"
             text={t('mentoringButton')}
           />

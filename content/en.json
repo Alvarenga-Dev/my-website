@@ -1,37 +1,37 @@
 {
   "navbar": {
     "home": "Home",
-    "about": "About",
-    "carrer": "Carrer",
+    "about": "About Me",
+    "carrer": "Career",
     "projects": "Projects"
   },
   "hero": {
-    "saudation": "Hi, I'm",
-    "saudation2": "and I craft beautiful & optimized apps.",
-    "description": "I'm Mobile developer, Speaker and Content creator at",
-    "mentoringButton": "Enter my mentoring",
-    "cvButton": "Download my CV"
+    "saudation": "Hey, my name is",
+    "saudation2": "and I create high-performance and scalable applications.",
+    "description": "I'm a Mobile Developer, Speaker, and Content Creator at",
+    "mentoringButton": "Get a mentoring session",
+    "cvButton": "Download my resume"
   },
   "about": {
     "title": "About Me",
-    "content": "As you may have noticed, my name is Lucas Alvarenga, or also known as Alvarenga! I'm a highly motivated and experienced self-taught Android Developer with nearly 4 years of experience developing high-quality mobile apps. Strong ability to design, develop and test Android applications, with in-depth knowledge of relevant programming languages, libraries and frameworks. Excellent problem-solving skills, team collaboration and self-management. I seek to contribute to the success of the company by providing efficient solutions in Android development. <br /><br /> I started programming when I was 13 years old precisely with Android, but using Java in 2017. As I was close to entering high school, I wanted to attend a technical school. So, the following year, I enrolled at the Rezende Rammel technical school to take a computer course. It was an incredible 3 years, as I increased my knowledge in the area. Even focusing heavily on Java and, later, on Kotlin, I was able to have contact with other languages such as JavaScript, Php, C, Pascal and Frameworks such as React.Js and Flutter. <br /><br /> When the year 2020 came, I was determined to start my career as an Android Developer once and for all, so I went through many selection processes and interviews until I got an internship and was hired in only 3 months. In the meantime, I've been a technology content creator since August 2019, where I 'documented' my journey from student to software developer. <br /><br />"
+    "content": "If you already know me, you know my name is Lucas Alvarenga, but many people also call me Alvarenga! I am a self-taught Android developer with 5 years of experience creating high-quality applications. I have strong skills in designing, developing, and testing Android apps, along with solid knowledge of programming languages, libraries, and essential frameworks for the ecosystem. I enjoy solving problems, working in a team, and self-managing to deliver efficient Android development solutions.<br /><br /> I started programming at the age of 13, specifically with Android, using Java back in 2017. As I was about to enter high school, I wanted to study at a technical school. The following year, I enrolled at Rezende Rammel to take an IT course. It was three incredible years where I deepened my knowledge, especially in Java and later in Kotlin. Additionally, I had contact with other languages such as JavaScript, PHP, C, and Pascal, as well as frameworks like React.js and Flutter.<br /><br /> In 2020, I finally decided that I wanted to pursue a career as an Android developer. I went through several selection processes and interviews until I landed my first internship, and within just three months, I was hired. At the same time, since August 2019, I have been creating technology content, documenting my journey from student to software developer.<br />"
   },
   "carrer": {
-    "title": "Carrer",
-    "description": "Below is a summary of my career, professional experience and education.",
-    "experiencesTitle": "Experiências Profissionais",
+    "title": "Career",
+    "description": "Below is a summary of my resume, professional experience, and education.",
+    "experiencesTitle": "Professional Experience",
     "experiences": {
       "experience1": {
         "title": "Android Developer",
-        "list": "Modularization and of the MVVM architecture | Android Jetpack libraries | Detekt | AWS | Jira | Accessibility",
+        "list": "Modularization and MVVM architecture implementation | Android Jetpack Libraries | CI/CD | AWS | Firebase | Accessibility | Robot Framework | Android | iOS",
         "local": "Itaú (@BRQ)",
         "icon": "/itau.svg",
         "startAt": "Dec 2023",
-        "endAt": "Currently"
+        "endAt": "Present"
       },
       "experience2": {
-        "title": "Mid-Level Android Engineer",
-        "list": "Modularization and of the MVVM architecture | Creation of tests with JUnit 5 and MockK | Android Jetpack libs | Participating in Design/Discovery processes | Integration with RESTful APIs | Detekt",
+        "title": "Android Developer",
+        "list": "Modularization and MVVM architecture implementation | Unit testing with JUnit 5 and MockK | Android Jetpack Libraries | Participation in Design/Discovery processes | RESTful API integration | Dependency Injection with Koin",
         "local": "Bornlogic",
         "icon": "/bornlogic.svg",
         "startAt": "Jul 2022",
@@ -39,91 +39,91 @@
       },
       "experience3": {
         "title": "Junior Android Developer",
-        "list": "Creation of new features defined by Squad | Unit tests with JUnit 5 + MockK | Android Jetpack libs | Detekt | Integration of RESTful APIs | Zendesk integration",
+        "list": "Development of new features defined by the team | Unit tests with JUnit 5 + MockK | Android Jetpack Libraries | Detekt | RESTful API integration | Zendesk integration",
         "local": "Bornlogic",
         "icon": "/bornlogic.svg",
         "startAt": "Jan 2021",
         "endAt": "Jul 2022"
       },
       "experience4": {
-        "title": "Intern Android Developer",
-        "list": "Creation of new features & bug fixes | Firebase (Crashlytics, Messaging, App Distribution...) | Android Jetpack libs | Picasso, Glide | Android Jetpack libs",
+        "title": "Android Developer Intern",
+        "list": "Development of new features and bug fixes | Firebase (Crashlytics, Messaging, App Distribution...) | Android Jetpack Libraries | Picasso | Glide",
         "local": "Bornlogic",
         "icon": "/bornlogic.svg",
         "startAt": "Sep 2020",
         "endAt": "Dec 2020"
       }
     },
-    "educationsTitle": "Educação",
+    "educationsTitle": "Education",
     "educations": {
       "education1": {
-        "title": "Computer Technician",
-        "description": "The ETRR helps me learn about technology. I had the opportunity to learn front-end, back-end and mobile development.",
-        "local": "Technical School, Rezende Rammel (ETRR), Brazil",
+        "title": "Technical Degree in IT",
+        "description": "ETRR helped me learn about technology. I had the opportunity to explore front-end, back-end, and mobile development.",
+        "local": "Rezende Rammel Technical School (ETRR), Brazil",
         "icon": "/itau.svg",
         "startAt": "2018",
         "endAt": "2020"
       },
       "education2": {
         "title": "I study several courses every year",
-        "description": "I never stop learning! I believe that continuous learning is essential for unlocking our potential in a world of constant change.",
+        "description": "I never stop learning! I believe continuous learning is essential to unlocking our potential in an ever-changing world.",
         "local": "",
         "icon": "/itau.svg",
         "startAt": "2017",
-        "endAt": "Always"
+        "endAt": "Always!"
       }
     }
   },
   "projects": {
     "title": "Projects",
-    "description": "Here is a gallery with some projects that I developed over time.",
+    "description": "Here is a gallery with some projects I have developed over time.",
     "project1": {
       "name": "Marketplace List",
-      "description": "This simple shopping list App helps you to create your list and already knowing the final value of the purchase!",
+      "description": "This simple shopping list application will help you create your list and know the final purchase price!",
       "link": "https://play.google.com/store/apps/details?id=com.alvarengadev.marketplacelist",
       "image": "/images/marketplace-list.png",
       "technologies": "MVVM | Dagger Hilt | Firebase Crashlytics"
     },
     "project2": {
       "name": "Movies Reviews",
-      "description": "Your/Dev Recruitment Process 2020 - Android Developer",
+      "description": "Your/Dev Selection Process 2020 - Android Developer",
       "link": "https://github.com/Alvarenga-Dev/Movie-Reviews",
       "image": "/images/movies-review.png",
       "technologies": "Retrofit | Live Data | Room"
     },
     "project3": {
       "name": "AlvaFlix",
-      "description": "A joke with my last name Alvarenga with netflix",
+      "description": "A joke with my last name Alvarenga and Netflix",
       "link": "https://github.com/Alvarenga-Dev/Alvaflix",
       "image": "/images/alvaflix.png",
       "technologies": "MVVM | Koin | Custom Components"
     },
     "project4": {
       "name": "Crypto - UI/UX",
-      "description": "Fictional project from Felipe Santanas Figma Course (FEUX), with the aim of improving my knowledge in Figma Tool and also in UI and UX.",
+      "description": "Fictional project from Felipe Santanas' Figma Course (FEUX), aimed at improving my knowledge of Figma and UI/UX.",
       "link": "https://www.figma.com/file/ei4iys8RFNzlXNswPVsBpI/Feux---NFT-App?node-id=404%3A5462",
       "image": "/images/crypto.png",
       "technologies": "Figma | Components | Create Flows"
     },
     "project5": {
-      "name": "AlvaMessager",
-      "description": "This app was able to work deeper with firebase, using it as a means of creating a new messaging app (I guess in high school I wasnt creative with names).",
+      "name": "AlvaMessenger",
+      "description": "In this application, I worked deeply with Firebase, using it to create a new messaging application (I guess I wasn't very creative with names in high school).",
       "link": "https://github.com/Alvarenga-Dev/Alva-Messenger",
       "image": "/images/alvamessager.png",
       "technologies": "Kotlin | Firebase"
     },
     "project6": {
       "name": "Time to Sleep",
-      "description": "This project was developed when I was in the 2nd year of high school, with the aim of being an alarm clock for the deaf!",
+      "description": "This project was developed in my second year of high school with the goal of being an alarm clock for the deaf!",
       "link": "https://github.com/Alvarenga-Dev/Time-to-Sleep",
       "image": "/images/time-to-sleep.png",
-      "technologies": "Bluetooth Connection | Arch MVP | Java"
+      "technologies": "Bluetooth Connection | MVP Architecture | Java"
     }
   },
   "footer": {
-    "message": "'We shouldn't do things expecting something in return. <br /> Do what needs to be done and the reward will come naturally in its time.'",
-    "socialLinks": "Social links",
-    "copyright": "Copyright alvarenga.dev. All Rights Reserved",
-    "developedBy": "Designed e developed by"
+    "message": "'We should not do things expecting something in return. <br /> Do what needs to be done, and the reward will come naturally in due time.'",
+    "socialLinks": "Social Media",
+    "copyright": "Copyright alvarenga.dev. All rights reserved",
+    "developedBy": "Designed and developed by"
   }
 }

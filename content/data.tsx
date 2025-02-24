@@ -141,6 +141,21 @@ const SocialsLinks = [
   }
 ]
 
+const MyLinks = [
+  {
+    name: 'Mentoria de Carreira',
+    link: 'https://go.hotmart.com/P98009168Q?dp=1'
+  },
+  {
+    name: 'LinkedIn',
+    link: 'https://www.linkedin.com/in/llucasallvarenga/'
+  },
+  {
+    name: 'GitHub',
+    link: 'https://github.com/Alvarenga-Dev'
+  }
+]
+
 const footerData = {
   message: 'We shouldn\'t do things expecting something in return. Do what needs to be done and the reward will come naturally in its time.',
   socialLinks: 'Social links',
@@ -148,5 +163,5 @@ const footerData = {
   developedBy: 'Designed e developed by'
 }
 
-export { experiencesData, projectsData, SocialsLinks, footerData };
+export { experiencesData, projectsData, SocialsLinks, footerData, MyLinks };
 

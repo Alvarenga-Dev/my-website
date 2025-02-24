@@ -1,16 +1,15 @@
 'use client'
 import Image from 'next/image'
 import { openLink } from '@/utils/utils'
-import { SocialsLinks } from '@/content/data'
+import { MyLinks } from '@/content/data'
 
 const Home = () => {
   const socialsMedias = [
     {
-      name: 'Portfólio',
+      name: 'Quem sou eu?',
       link: '/pt/portfolio',
-      icon: ''
     },
-    ...SocialsLinks
+    ...MyLinks
   ]
 
   return (
