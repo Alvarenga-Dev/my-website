@@ -25,9 +25,9 @@ const Home = () => {
       </div>
       <div className="items-center flex flex-col" data-aos="fade-up" data-aos-duration="1000">
         <p className="text-xl text-white-500 font-semibold md:text-2xl mt-2">Lucas Alvarenga</p>
-        <p className="text-sm text-primary md:font-normal md:text-base">Android developer</p>
+        <p className="text-sm text-primary md:font-normal md:text-base">Android Software Engineer</p>
         <p className="text-sm md:font-medium text-white-400 mt-6 md:text-base">
-          Meus links em um lugar só! Confira abaixo
+          Meus links em um lugar só! Confira abaixo:
         </p>
       </div>
 
