@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
 
       <Image
         data-aos="fade-left"
-        src="/images/hero-image.png"
+        src="/images/hero-my-photo-image.png"
         alt="Imagem do Lucas Alvarenga"
         height={100}
         width={120}
