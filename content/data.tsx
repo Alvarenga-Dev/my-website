@@ -143,15 +143,19 @@ const SocialsLinks = [
 
 const MyLinks = [
   {
-    name: 'Mentoria de Carreira',
+    name: 'Aprenda mais comigo',
     link: 'https://go.hotmart.com/P98009168Q?dp=1'
   },
   {
-    name: 'LinkedIn',
+    name: 'Quem é o Alvarenga?',
+    link: '/pt/portfolio',
+  },
+  {
+    name: 'Meu LinkedIn',
     link: 'https://www.linkedin.com/in/llucasallvarenga/'
   },
   {
-    name: 'GitHub',
+    name: 'Meu GitHub',
     link: 'https://github.com/Alvarenga-Dev'
   }
 ]

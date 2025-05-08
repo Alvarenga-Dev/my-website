@@ -9,7 +9,7 @@
     "saudation": "Opa, me chamo",
     "saudation2": "e crio aplicações performáticas e escaláveis.",
     "description": "Sou Desenvolvedor Mobile, Palestrante e Criador de conteúdo no",
-    "mentoringButton": "Tenha uma mentoria",
+    "mentoringButton": "Aprenda mais comigo",
     "cvButton": "Baixar meu currículo"
   },
   "about": {
@@ -46,7 +46,7 @@
         "endAt": "Jul 2022"
       },
       "experience4": {
-        "title": "Desenvolvedor Android Estagiário",
+        "title": "Estagiário",
         "list": "Criação de novas funcionalidades e correção de bugs | Firebase (Crashlytics, Messaging, App Distribution...) | Android Jetpack libs | Picasso | Glide | Android Jetpack libs",
         "local": "Bornlogic",
         "icon": "/bornlogic.svg",
