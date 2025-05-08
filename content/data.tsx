@@ -144,7 +144,7 @@ const SocialsLinks = [
 const MyLinks = [
   {
     name: 'Aprenda mais comigo',
-    link: 'https://go.hotmart.com/P98009168Q?dp=1'
+    link: 'https://alvarenga-dev.notion.site/Guia-Interativo-para-Programadores-Estagi-rios-e-Juniors-1aa4c2586c5480159b6bd09f9cb1cb9f'
   },
   {
     name: 'Quem é o Alvarenga?',

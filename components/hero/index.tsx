@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
         <div
           className="flex items-center justify-center lg:justify-normal gap-6 mt-7">
           <Button
-            onClick={() => openLink('https://bit.ly/guia-interativo-para-devs')}
+            onClick={() => openLink('https://alvarenga-dev.notion.site/Guia-Interativo-para-Programadores-Estagi-rios-e-Juniors-1aa4c2586c5480159b6bd09f9cb1cb9f')}
             color="primary"
             text={t('mentoringButton')}
           />
