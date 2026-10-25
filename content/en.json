@@ -14,7 +14,7 @@
   },
   "about": {
     "title": "About Me",
-    "content": "If you already know me, you know my name is Lucas Alvarenga, but many people also call me Alvarenga! I am a self-taught Android developer with 5 years of experience creating high-quality applications. I have strong skills in designing, developing, and testing Android apps, along with solid knowledge of programming languages, libraries, and essential frameworks for the ecosystem. I enjoy solving problems, working in a team, and self-managing to deliver efficient Android development solutions.<br /><br /> I started programming at the age of 13, specifically with Android, using Java back in 2017. As I was about to enter high school, I wanted to study at a technical school. The following year, I enrolled at Rezende Rammel to take an IT course. It was three incredible years where I deepened my knowledge, especially in Java and later in Kotlin. Additionally, I had contact with other languages such as JavaScript, PHP, C, and Pascal, as well as frameworks like React.js and Flutter.<br /><br /> In 2020, I finally decided that I wanted to pursue a career as an Android developer. I went through several selection processes and interviews until I landed my first internship, and within just three months, I was hired. At the same time, since August 2019, I have been creating technology content, documenting my journey from student to software developer.<br />"
+    "content": "If you already know me, you know my name is Lucas Alvarenga, but many people also call me Alvarenga! I am a Senior Mobile Software Engineer with 5+ years of experience, focused on Android and the evolution of large-scale digital products. My work brings together software architecture, modularization, quality, integrations, and user experience. I also connect software engineering and AI through Spec-Driven Development, context engineering, and AI-assisted development in real engineering workflows.<br /><br /> I started programming at the age of 13, specifically with Android, using Java back in 2017. As I was about to enter high school, I wanted to study at a technical school. The following year, I enrolled at Rezende Rammel to take an IT course. It was three incredible years where I deepened my knowledge, especially in Java and later in Kotlin. Additionally, I had contact with other languages such as JavaScript, PHP, C, and Pascal, as well as frameworks like React.js and Flutter.<br /><br /> In 2020, I decided to pursue a career as an Android developer. I went through several selection processes and interviews until I landed my first internship, and within just three months, I was hired. Since August 2019, I have also been creating technology content and documenting my journey from student to software developer.<br />"
   },
   "carrer": {
     "title": "Career",
@@ -22,32 +22,40 @@
     "experiencesTitle": "Professional Experience",
     "experiences": {
       "experience1": {
-        "title": "Android Developer",
-        "list": "Modularization and MVVM architecture implementation | Android Jetpack Libraries | CI/CD | AWS | Firebase | Accessibility | Robot Framework | Android | iOS",
-        "local": "Itaú (@BRQ)",
-        "icon": "/itau.svg",
-        "startAt": "Dec 2023",
+        "title": "Senior Mobile Software Engineer | AI Ambassador",
+        "list": "Contributed to mobile initiatives that supported over 1,300% growth in product adoption | Implemented A/B tests in key journeys to validate UX hypotheses and support data-informed decisions | Introduced Spec-Driven Development with OpenSpec and created a reusable Harness workflow for AI-assisted development | Support teams adopting SDD, context engineering, and effective LLM use | Applied AI to production work, including technical documentation, Android flows, API integrations, and A/B tests",
+        "local": "BRQ Digital Solutions (@ Itaú)",
+        "icon": "/brq.svg",
+        "startAt": "Feb 2026",
         "endAt": "Present"
       },
       "experience2": {
-        "title": "Android Developer",
-        "list": "Modularization and MVVM architecture implementation | Unit testing with JUnit 5 and MockK | Android Jetpack Libraries | Participation in Design/Discovery processes | RESTful API integration | Dependency Injection with Koin",
+        "title": "Android Software Engineer",
+        "list": "Developed a centralized experience for viewing and managing automatic payments | Evolved the Android architecture with MVVM and modularization, and contributed to the gradual migration of XML screens to Jetpack Compose | Increased automated test coverage from 14% to 80.5% with JUnit 4 and MockK | Partnered with Product and Design on user journeys, accessibility, and user experience | Helped automate 21 Android scenarios with Robot Framework and Appium, and documented test execution and maintenance",
+        "local": "BRQ Digital Solutions (@ Itaú)",
+        "icon": "/brq.svg",
+        "startAt": "Dec 2023",
+        "endAt": "Feb 2026"
+      },
+      "experience3": {
+        "title": "Android Software Engineer",
+        "list": "Contributed to restructuring the Android app with MVVM and modularization | Created automated tests with JUnit 5 and MockK | Helped document Android standards and best practices | Contributed to architecture decisions and onboarding new developers | Integrated REST APIs and took part in Design and Discovery processes",
         "local": "Bornlogic",
         "icon": "/bornlogic.svg",
         "startAt": "Jul 2022",
         "endAt": "May 2023"
       },
-      "experience3": {
+      "experience4": {
         "title": "Junior Android Developer",
-        "list": "Development of new features defined by the team | Unit tests with JUnit 5 + MockK | Android Jetpack Libraries | Detekt | RESTful API integration | Zendesk integration",
+        "list": "Built features with Product and Android teams | Refactored and applied MVVM and Clean Architecture | Wrote unit tests with JUnit 5 and MockK | Contributed to modularization, REST API and Zendesk integrations | Helped onboard new developers",
         "local": "Bornlogic",
         "icon": "/bornlogic.svg",
         "startAt": "Jan 2021",
         "endAt": "Jul 2022"
       },
-      "experience4": {
+      "experience5": {
         "title": "Android Developer Intern",
-        "list": "Development of new features and bug fixes | Firebase (Crashlytics, Messaging, App Distribution...) | Android Jetpack Libraries | Picasso | Glide",
+        "list": "Built features and fixed bugs in the Gerentes Digitais app | Worked with Firebase, Retrofit, and Android Jetpack libraries | Integrated image loading with Picasso and Glide",
         "local": "Bornlogic",
         "icon": "/bornlogic.svg",
         "startAt": "Sep 2020",
@@ -118,7 +126,58 @@
       "link": "https://github.com/Alvarenga-Dev/Time-to-Sleep",
       "image": "/images/time-to-sleep.png",
       "technologies": "Bluetooth Connection | MVP Architecture | Java"
+    },
+    "project7": {
+      "name": "Who is the infiltrator?",
+      "description": "An in-person deduction game: find out who is pretending to know the secret word.",
+      "link": "/quem-e-o-infiltrado",
+      "image": "/images/oddword/project-card.jpg",
+      "technologies": "Android | Kotlin Multiplatform | Compose"
     }
+  },
+  "oddword": {
+    "eyebrow": "A GAME AMONG FRIENDS",
+    "titleLine1": "Who is the",
+    "titleLine2": "infiltrator?",
+    "description": "One secret word. One person pretending to know it. And a group trying to catch the bluff.",
+    "availability": "Coming soon to Android and iOS",
+    "heroAlt": "Who is the infiltrator? game home screen",
+    "players": "4 to 10 players",
+    "device": "One phone",
+    "offline": "100% offline",
+    "words": "435 words",
+    "categories": "6 categories",
+    "howEyebrow": "LESS THAN A MINUTE",
+    "howTitle": "How to play",
+    "howDescription": "The phone goes around. The mystery stays.",
+    "step1": "Everyone secretly receives the same word, except one person: they find out they are the infiltrator.",
+    "step2": "Give clues without saying the word. The infiltrator must pretend to know it and blend into the conversation.",
+    "step3": "Decide as a group who the infiltrator is. Then reveal the answer in the app.",
+    "step4": "If the infiltrator is caught, the majority scores. If they get away, they earn points.",
+    "featuresEyebrow": "THINGS ARE ABOUT TO GET SUSPICIOUS",
+    "featuresTitle": "One round, many stories",
+    "feature1Title": "Just one phone",
+    "feature1Description": "Pass the phone around to reveal each player's role. No sign-up or internet connection needed.",
+    "feature2Title": "Play your way",
+    "feature2Description": "Choose a category and set the conversation timer for your group.",
+    "feature3Title": "Keep score",
+    "feature3Description": "Track points after every round and see who reads the clues best.",
+    "screensEyebrow": "TAKE A LOOK",
+    "screensTitle": "Set up the next round",
+    "screensAltHome": "Home screen with options to start a game",
+    "screensAltHowTo": "Screen showing the steps for how to play",
+    "screensAltSetup": "Player and round category setup",
+    "screensAltScore": "Game scoreboard",
+    "ctaTitle": "Ready for the next round?",
+    "ctaDescription": "Get your group together. The game is coming soon.",
+    "playStore": "Google Play",
+    "appStore": "App Store",
+    "comingSoon": "Coming soon",
+    "back": "Back to portfolio",
+    "termsLink": "Terms of use (Portuguese)",
+    "privacyLink": "Privacy policy (Portuguese)",
+    "backToGame": "Back to the game",
+    "policyContents": "On this page"
   },
   "footer": {
     "message": "'We should not do things expecting something in return. <br /> Do what needs to be done, and the reward will come naturally in due time.'",

@@ -1,0 +1,116 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+env:
+  NEXT_TELEMETRY_DISABLED: '1'
+  CI: 'true'
+
+jobs:
+  validate:
+    name: Build and smoke tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Validate translations
+        run: npm run check:i18n
+      - name: Test CI deployment logic
+        run: npm run test:ci
+      - name: TypeScript
+        run: npm run typecheck
+      - name: Production build
+        run: npm run build
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Test production server (desktop and mobile)
+        run: npm run test:smoke
+      - name: Save browser reports
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: smoke-production
+          path: |
+            playwright-report/
+            test-results/
+          if-no-files-found: ignore
+          retention-days: 7
+
+  preview:
+    name: Vercel preview
+    needs: validate
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      deployments: read
+    steps:
+      # Use the same merge candidate as the build job for test code.
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - name: Wait for the PR commit's deployment
+        id: deployment
+        run: node scripts/ci/wait-for-preview.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          PREVIEW_ENVIRONMENT: ${{ vars.PREVIEW_ENVIRONMENT || 'Preview' }}
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Test deployed preview (desktop and mobile)
+        run: npm run test:smoke
+        env:
+          PLAYWRIGHT_BASE_URL: ${{ steps.deployment.outputs.url }}
+          VERCEL_AUTOMATION_BYPASS_SECRET: ${{ secrets.VERCEL_AUTOMATION_BYPASS_SECRET }}
+      - name: Save preview reports
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: smoke-preview
+          path: |
+            playwright-report/
+            test-results/
+          if-no-files-found: ignore
+          retention-days: 7
+
+  required:
+    name: CI required
+    needs: [validate, preview]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    steps:
+      - name: Require successful validation and PR preview
+        env:
+          VALIDATION_RESULT: ${{ needs.validate.result }}
+          PREVIEW_RESULT: ${{ needs.preview.result }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          test "$VALIDATION_RESULT" = success
+          if [ "$EVENT_NAME" = pull_request ]; then
+            test "$PREVIEW_RESULT" = success
+          fi

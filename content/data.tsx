@@ -148,7 +148,7 @@ const MyLinks = [
   },
   {
     name: 'Quem é o Alvarenga?',
-    link: '/pt/portfolio',
+    link: '/',
   },
   {
     name: 'Meu LinkedIn',

@@ -24,11 +24,13 @@ type Languages = 'en' | 'pt';
 
 export default async function RootLayout({
   children,
-  params: { locale },
+  params,
 }: {
   children: React.ReactNode;
-  params: any;
+  params: Promise<{ locale: Languages }>;
 }) {
+  const { locale } = await params;
+
   if (!routing.locales.includes(locale)) {
     notFound();
   }
