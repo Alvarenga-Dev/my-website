@@ -53,19 +53,19 @@ export const LegalDocument = async ({ markdown, updatedAt }: LegalDocumentProps)
   return (
     <main lang="pt-BR" className="min-h-screen bg-[#0b0e1d] text-white-500">
       <header className="border-b border-white/[0.08] bg-[#101326]/80">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-6 lg:px-10">
-          <Link href="/quem-e-o-infiltrado" className="inline-flex items-center gap-3 text-sm font-semibold text-white-300 transition hover:text-white-500">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-x-4 gap-y-3 px-4 py-5 sm:px-6 sm:py-6 lg:px-10">
+          <Link href="/quem-e-o-infiltrado" className="inline-flex min-w-0 items-center gap-3 text-sm font-semibold text-white-300 transition hover:text-white-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#c2a8ff]">
             <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/[0.04]"><FaArrowLeft aria-hidden="true" /></span>
-            {t('backToGame')}
+            <span>{t('backToGame')}</span>
           </Link>
-          <span className="rounded-full border border-[#b99aff]/25 bg-[#7045e1]/10 px-3 py-1.5 text-xs font-semibold text-[#c2a8ff]">Português (Brasil)</span>
+          <span className="shrink-0 rounded-full border border-[#b99aff]/25 bg-[#7045e1]/10 px-3 py-1.5 text-xs font-semibold text-[#c2a8ff]">Português (Brasil)</span>
         </div>
       </header>
 
-      <div className="mx-auto grid max-w-7xl gap-10 px-6 py-10 lg:grid-cols-[250px_minmax(0,1fr)] lg:gap-16 lg:px-10 lg:py-16">
-        <aside className="lg:sticky lg:top-8 lg:max-h-[calc(100vh-4rem)] lg:self-start lg:overflow-y-auto">
+      <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)] gap-8 px-4 py-8 sm:gap-10 sm:px-6 sm:py-10 lg:grid-cols-[250px_minmax(0,1fr)] lg:gap-16 lg:px-10 lg:py-16">
+        <aside className="min-w-0 lg:sticky lg:top-8 lg:max-h-[calc(100vh-4rem)] lg:self-start lg:overflow-y-auto">
           <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#b99aff]">{t('policyContents')}</p>
-          <nav aria-label={t('policyContents')} className="mt-4 flex gap-2 overflow-x-auto pb-3 lg:block lg:space-y-1 lg:overflow-visible">
+          <nav aria-label={t('policyContents')} className="mt-4 flex max-w-full gap-2 overflow-x-auto pb-3 lg:block lg:space-y-1 lg:overflow-visible">
             {sections.map((section) => (
               <a key={section} href={`#${slugify(section)}`} className="block shrink-0 rounded-lg px-3 py-2 text-sm text-[#aeb3ca] transition hover:bg-white/[0.05] hover:text-white-500 lg:whitespace-normal">
                 {section}
@@ -74,7 +74,7 @@ export const LegalDocument = async ({ markdown, updatedAt }: LegalDocumentProps)
           </nav>
         </aside>
 
-        <article className="min-w-0 rounded-[1.75rem] border border-white/[0.09] bg-[#14172b] px-6 py-8 sm:px-10 sm:py-12 lg:px-14">
+        <article className="min-w-0 rounded-[1.75rem] border border-white/[0.09] bg-[#14172b] px-4 py-7 sm:px-10 sm:py-12 lg:px-14">
           <div className="mb-8 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-[#aeb3ca]">
             <span className="rounded-full bg-[#d4ff35]/10 px-3 py-1 font-semibold text-[#d4ff35]">Quem é o Infiltrado?</span>
             <span>{updatedAt}</span>
@@ -85,7 +85,7 @@ export const LegalDocument = async ({ markdown, updatedAt }: LegalDocumentProps)
         </article>
       </div>
 
-      <footer className="border-t border-white/[0.08] px-6 py-8 text-center text-sm text-[#aeb3ca]">
+      <footer className="border-t border-white/[0.08] px-4 py-8 text-center text-sm text-[#aeb3ca] sm:px-6">
         <Link href="/quem-e-o-infiltrado" className="font-semibold text-[#c2a8ff] underline decoration-[#8d68e8]/50 underline-offset-4 hover:text-white-500">{t('backToGame')}</Link>
       </footer>
     </main>
