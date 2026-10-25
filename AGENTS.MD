@@ -37,7 +37,7 @@ app/
 ├── [locale]/
 │   ├── layout.tsx
 │   ├── page.tsx
-│   └── portfolio/page.tsx
+│   └── links/page.tsx
 ├── globals.css
 ├── fonts/
 components/
@@ -85,6 +85,7 @@ utils/
 
 - O projeto usa `next-intl` e locales `pt` e `en`.
 - As rotas seguem o padrão `/pt` e `/en`.
+- A página de links fica em `/links`, sem prefixo de idioma.
 - Sempre mantenha a mesma estrutura de chaves em `content/pt.json` e `content/en.json`.
 - Para listas, o projeto usa strings com separador `|` e depois faz `split('|')` no componente.
 

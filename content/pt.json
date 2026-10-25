@@ -14,7 +14,7 @@
   },
   "about": {
     "title": "Sobre mim",
-    "content": "Se você já me conhece, sabe que meu nome é Lucas Alvarenga, mas muita gente também me chama de Alvarenga! Sou um desenvolvedor Android autodidata, com 5 anos de experiência criando aplicativos de alta qualidade. Tenho uma forte habilidade em projetar, desenvolver e testar apps Android, além de um conhecimento sólido em linguagens de programação, bibliotecas e frameworks essenciais para o ecossistema. Gosto de resolver problemas, trabalhar em equipe e me autogerenciar para entregar soluções eficientes no desenvolvimento Android.<br /><br /> Comecei a programar aos 13 anos, justamente com Android, usando Java lá em 2017. Como estava perto de entrar no ensino médio, queria estudar em uma escola técnica. No ano seguinte, me matriculei na Rezende Rammel para cursar informática. Foram três anos incríveis, onde aprofundei meus conhecimentos, especialmente em Java e, depois, em Kotlin. Além disso, tive contato com outras linguagens como JavaScript, PHP, C e Pascal, além de frameworks como React.js e Flutter.<br /><br /> Em 2020, decidi de vez que queria seguir carreira como desenvolvedor Android. Passei por vários processos seletivos e entrevistas até conseguir meu primeiro estágio, e em apenas três meses fui efetivado. Paralelamente, desde agosto de 2019, venho criando conteúdo sobre tecnologia, documentando minha jornada de estudante a desenvolvedor de software.<br />"
+    "content": "Se você já me conhece, sabe que meu nome é Lucas Alvarenga, mas muita gente também me chama de Alvarenga! Sou Senior Mobile Software Engineer, com mais de 5 anos de experiência, atuando principalmente no ecossistema Android e na evolução de produtos digitais de grande escala. Meu trabalho combina arquitetura de software, modularização, qualidade, integrações e experiência do usuário. Também conecto engenharia de software e inteligência artificial por meio de Spec-Driven Development, Engenharia de Contexto e desenvolvimento assistido por IA em fluxos reais de engenharia.<br /><br /> Comecei a programar aos 13 anos, justamente com Android, usando Java lá em 2017. Como estava perto de entrar no ensino médio, queria estudar em uma escola técnica. No ano seguinte, me matriculei na Rezende Rammel para cursar informática. Foram três anos incríveis, onde aprofundei meus conhecimentos, especialmente em Java e, depois, em Kotlin. Além disso, tive contato com outras linguagens como JavaScript, PHP, C e Pascal, além de frameworks como React.js e Flutter.<br /><br /> Em 2020, decidi seguir carreira como desenvolvedor Android. Passei por vários processos seletivos e entrevistas até conseguir meu primeiro estágio, e em apenas três meses fui efetivado. Desde agosto de 2019, também crio conteúdo sobre tecnologia e documento minha jornada de estudante a desenvolvedor de software.<br />"
   },
   "carrer": {
     "title": "Carreira",
@@ -22,32 +22,40 @@
     "experiencesTitle": "Experiências Profissionais",
     "experiences": {
       "experience1": {
-        "title": "Desenvolvedor Android",
-        "list": "Modularização e implementação da arquitetura MVVM | Bibliotecas do Android Jetpack | CI/CD | AWS | Firebase | Acessibilidade | Robot Framework | Android | iOS",
-        "local": "Itaú (@BRQ)",
-        "icon": "/itau.svg",
-        "startAt": "Dez 2023",
+        "title": "Engenheiro de Software Mobile Sênior | Embaixador de IA",
+        "list": "Contribuí para iniciativas mobile que apoiaram crescimento superior a 1.300% na adesão ao produto | Implementei testes A/B em jornadas estratégicas, apoiando decisões de UX orientadas por dados | Introduzi práticas de Spec-Driven Development com OpenSpec e criei um fluxo reutilizável de Harness para desenvolvimento assistido por IA | Apoio diferentes times na adoção de SDD, Engenharia de Contexto e uso eficiente de LLMs | Apliquei IA em entregas de produção, incluindo documentação técnica, fluxos Android, integrações de APIs e testes A/B",
+        "local": "BRQ Digital Solutions (@ Itaú)",
+        "icon": "/brq.svg",
+        "startAt": "Fev 2026",
         "endAt": "Atualmente"
       },
       "experience2": {
-        "title": "Desenvolvedor Android",
-        "list": "Modularização e aplicação da arquitetura MVVM | Criação de testes unitários com JUnit 5 e MockK | Bibliotecas do Android Jetpack | Participação no processo de Design/Discovery | Integração com RESTful APIs | Injeção de Dependência com Koin",
+        "title": "Engenheiro de Software Android",
+        "list": "Desenvolvi uma experiência centralizada para listar e gerenciar pagamentos automáticos | Evoluí a arquitetura Android com MVVM e modularização, além de contribuir para a migração gradual de telas XML para Jetpack Compose | Ampliei a cobertura de testes automatizados de 14% para 80,5%, com JUnit 4 e MockK | Colaborei com Produto e Design na evolução de jornadas, acessibilidade e experiência do usuário | Contribuí para a automação de 21 cenários Android com Robot Framework e Appium, além de documentar a execução e manutenção dos testes",
+        "local": "BRQ Digital Solutions (@ Itaú)",
+        "icon": "/brq.svg",
+        "startAt": "Dez 2023",
+        "endAt": "Fev 2026"
+      },
+      "experience3": {
+        "title": "Engenheiro de Software Android",
+        "list": "Participei da reestruturação do aplicativo Android com MVVM e modularização | Criei testes automatizados com JUnit 5 e MockK | Contribuí para a documentação de padrões e boas práticas de Android | Colaborei em decisões de arquitetura e na integração de novos desenvolvedores | Integrei APIs RESTful e participei de processos de Design e Discovery",
         "local": "Bornlogic",
         "icon": "/bornlogic.svg",
         "startAt": "Jul 2022",
         "endAt": "Mai 2023"
       },
-      "experience3": {
+      "experience4": {
         "title": "Desenvolvedor Android júnior",
-        "list": "Criação de novas funcionalidades definidas pela equipe | Unit tests with JUnit 5 + MockK | Android Jetpack libs | Detekt | Integração com RESTful APIs | Zendesk integration",
+        "list": "Criei funcionalidades em colaboração com as equipes de Produto e Android | Refatorei e apliquei MVVM e Clean Architecture | Escrevi testes unitários com JUnit 5 e MockK | Contribuí para modularização, integração de APIs RESTful e Zendesk | Apoiei a integração de novos desenvolvedores à equipe",
         "local": "Bornlogic",
         "icon": "/bornlogic.svg",
         "startAt": "Jan 2021",
         "endAt": "Jul 2022"
       },
-      "experience4": {
-        "title": "Estagiário",
-        "list": "Criação de novas funcionalidades e correção de bugs | Firebase (Crashlytics, Messaging, App Distribution...) | Android Jetpack libs | Picasso | Glide | Android Jetpack libs",
+      "experience5": {
+        "title": "Estagiário de Desenvolvimento Android",
+        "list": "Desenvolvi funcionalidades e corrigi bugs no aplicativo Gerentes Digitais | Trabalhei com Firebase, Retrofit e bibliotecas Android Jetpack | Integrei recursos com Picasso e Glide",
         "local": "Bornlogic",
         "icon": "/bornlogic.svg",
         "startAt": "Set 2020",
@@ -118,7 +126,58 @@
       "link": "https://github.com/Alvarenga-Dev/Time-to-Sleep",
       "image": "/images/time-to-sleep.png",
       "technologies": "Conexão Bluetooth | Arq. MVP | Java"
+    },
+    "project7": {
+      "name": "Quem é o infiltrado?",
+      "description": "Um jogo presencial de dedução: descubra quem está fingindo conhecer a palavra secreta.",
+      "link": "/quem-e-o-infiltrado",
+      "image": "/images/oddword/project-card.jpg",
+      "technologies": "Android | Kotlin Multiplatform | Compose"
     }
+  },
+  "oddword": {
+    "eyebrow": "UM JOGO ENTRE NÓS",
+    "titleLine1": "Quem é o",
+    "titleLine2": "infiltrado?",
+    "description": "Uma palavra secreta. Uma pessoa fingindo que sabe. E um grupo tentando descobrir quem está blefando.",
+    "availability": "Em breve para Android e iOS",
+    "heroAlt": "Tela inicial do jogo Quem é o infiltrado?",
+    "players": "4 a 10 pessoas",
+    "device": "Um celular",
+    "offline": "100% offline",
+    "words": "435 palavras",
+    "categories": "6 categorias",
+    "howEyebrow": "MENOS DE UM MINUTO",
+    "howTitle": "Como jogar",
+    "howDescription": "O celular passa. O mistério fica.",
+    "step1": "Todos recebem a mesma palavra em segredo, menos uma pessoa: ela descobre que é o infiltrado.",
+    "step2": "Deem pistas sem dizer a palavra. O infiltrado precisa fingir que sabe e se misturar à conversa.",
+    "step3": "Decidam em grupo quem é o infiltrado. Depois, revelem a resposta no app.",
+    "step4": "Se o infiltrado for descoberto, a maioria pontua. Se escapar, ele ganha pontos.",
+    "featuresEyebrow": "A RODA VAI FICAR SUSPEITA",
+    "featuresTitle": "Uma partida, muitas histórias",
+    "feature1Title": "Só um celular",
+    "feature1Description": "Passe o aparelho de mão em mão para distribuir os papéis. Sem cadastro e sem precisar de internet.",
+    "feature2Title": "No seu ritmo",
+    "feature2Description": "Escolha a categoria e ajuste o tempo de conversa para cada grupo.",
+    "feature3Title": "Placar da turma",
+    "feature3Description": "Acompanhe os pontos a cada rodada e descubra quem está lendo melhor as pistas.",
+    "screensEyebrow": "UMA OLHADINHA NO JOGO",
+    "screensTitle": "Prepare a próxima rodada",
+    "screensAltHome": "Tela inicial com opções para começar uma partida",
+    "screensAltHowTo": "Tela com os passos de como jogar",
+    "screensAltSetup": "Configuração de participantes e categoria da rodada",
+    "screensAltScore": "Placar da partida",
+    "ctaTitle": "Vai encarar a próxima rodada?",
+    "ctaDescription": "Reúna a turma. O jogo chega em breve.",
+    "playStore": "Google Play",
+    "appStore": "App Store",
+    "comingSoon": "Em breve",
+    "back": "Voltar ao portfólio",
+    "termsLink": "Termos de uso",
+    "privacyLink": "Política de Privacidade",
+    "backToGame": "Voltar ao jogo",
+    "policyContents": "Nesta página"
   },
   "footer": {
     "message": "'Não devemos fazer coisas à espera de algo em troca. <br /> Faça o que tem de ser feito e a recompensa virá naturalmente a seu tempo.'",

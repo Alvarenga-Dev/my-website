@@ -1,9 +1,9 @@
 'use client'
-import { openLink } from '@/utils/utils'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { FaArrowRight } from 'react-icons/fa'
 import { A11y, Navigation, Pagination, Scrollbar } from 'swiper/modules'
+import { Link } from '@/i18n/routing'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -13,7 +13,6 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 
 const Projects: React.FC = () => {
   const t = useTranslations('projects')
-
   const projectsData = [
     {
       name: t('project1.name'),
@@ -56,6 +55,13 @@ const Projects: React.FC = () => {
       link: t('project6.link'),
       image: t('project6.image'),
       technologies: t('project6.technologies').split('|')
+    },
+    {
+      name: t('project7.name'),
+      description: t('project7.description'),
+      link: '/quem-e-o-infiltrado',
+      image: t('project7.image'),
+      technologies: t('project7.technologies').split('|')
     }
   ]
 
@@ -89,10 +95,25 @@ const Projects: React.FC = () => {
         {projectsData.map((item, index) => {
           return (
             <SwiperSlide key={index}>
-              <div
-                onClick={() => openLink(item.link)}
-                className="group flex-shrink-0 w-fit h-[395px] relative cursor-pointer"
-              >
+              {item.link.startsWith('/') ? (
+                <Link href="/quem-e-o-infiltrado" className="group block flex-shrink-0 w-fit h-[395px] relative cursor-pointer">
+                  <ProjectCard item={item} />
+                </Link>
+              ) : (
+                <a href={item.link} target="_blank" rel="noreferrer" className="group block flex-shrink-0 w-fit h-[395px] relative cursor-pointer">
+                  <ProjectCard item={item} />
+                </a>
+              )}
+            </SwiperSlide>
+          )
+        })}
+      </Swiper>
+    </section>
+  )
+}
+
+const ProjectCard = ({ item }: { item: { name: string; description: string; image: string; technologies: string[] } }) => (
+              <div className="h-full w-full relative">
                 <div className="group-hover:flex hidden flex-col justify-between bg-black bg-opacity-75 h-full w-full absolute top-0 left-0 z-10 px-4 py-6 rounded-lg">
                   <div>
                     <p className="text-white-500 text-xl font-semibold mb-3">{item.name}</p>
@@ -127,12 +148,6 @@ const Projects: React.FC = () => {
                   width={250}
                 />
               </div>
-            </SwiperSlide>
-          )
-        })}
-      </Swiper>
-    </section>
-  )
-}
+)
 
 export default Projects

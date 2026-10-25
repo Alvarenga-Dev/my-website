@@ -23,7 +23,7 @@ app/
 ├── [locale]/
 │   ├── layout.tsx
 │   ├── page.tsx
-│   └── portfolio/page.tsx
+│   └── links/page.tsx
 ├── globals.css
 ├── favicon.ico
 ├── fonts/
@@ -58,6 +58,7 @@ utils/
 
 - `app/[locale]/layout.tsx`: raiz do site por locale; define metadata, provider de mensagens e fontes locais.
 - `app/[locale]/page.tsx`: página principal do portfolio; reúne as seções e o layout geral.
+- `app/[locale]/links/page.tsx`: página de links pessoais.
 - `components/*`: blocos de interface usados por página inicial, como Hero, AboutMe, Carrer, Projects, Footer e Navbar.
 - `content/data.tsx`: dados estruturados de links, redes sociais e listas de experiência/projetos.
 - `content/*.json`: textos e traduções do sistema i18n.
@@ -179,6 +180,7 @@ export const routing = defineRouting({
 ### 6.2 Rotas
 
 - `/pt` e `/en` são as rotas principais;
+- `/links` é a página de links, sem prefixo de idioma; o middleware a serve no locale padrão;
 - a navegação usa wrappers do `next-intl` para manter a URL sincronizada com o locale atual.
 
 ### 6.3 Boas práticas

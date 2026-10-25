@@ -29,6 +29,10 @@ pnpm-debug.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# browser test reports
+playwright-report/
+test-results/
+
 # sdd
 openSpec/
 .codex/
