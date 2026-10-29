@@ -29,6 +29,13 @@ export default {
       },
       colors: {
         primary: 'rgb(var(--primary))',
+        marketplace: {
+          accent: '#f1cb4e',
+          base: '#101114',
+          surface: '#202127',
+          muted: '#a5a6ad',
+          ink: '#191a1e',
+        },
 
         'background-primary': 'rgb(var(--bg-primary))',
         'background-secondary': 'rgb(var(--bg-secondary))',

@@ -69,3 +69,34 @@ test('CTA baixa um currículo PDF válido', async ({ page }) => {
   for await (const chunk of stream) chunks.push(Buffer.from(chunk));
   expect(Buffer.concat(chunks).subarray(0, 5).toString()).toBe('%PDF-');
 });
+
+for (const locale of ['pt', 'en']) {
+  test(`Marketplace List em ${locale} tem página própria e alterna as capturas`, async ({ page }) => {
+    await page.goto(`/${locale}`);
+    const projectLink = page.locator(`#projects a[href="/${locale}/marketplace-list"]`);
+    await expect(projectLink).toHaveCount(1);
+    await projectLink.scrollIntoViewIfNeeded();
+    await projectLink.click();
+    await expect(page).toHaveURL(new RegExp(`/${locale}/marketplace-list$`));
+    await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+    await expect(page).toHaveTitle('Marketplace List | Lucas Alvarenga');
+    await expect(page.locator('html')).toHaveAttribute('lang', locale);
+
+    const gallery = page.locator('#inside-app');
+    const light = gallery.getByRole('button', { name: locale === 'pt' ? 'Tema claro' : 'Light mode' });
+    const dark = gallery.getByRole('button', { name: locale === 'pt' ? 'Tema escuro' : 'Dark mode' });
+    await expect(dark).toHaveAttribute('aria-pressed', 'true');
+    await light.click();
+    await expect(light).toHaveAttribute('aria-pressed', 'true');
+    for (const screenshot of await gallery.locator('img').all()) {
+      await expect(screenshot).toHaveAttribute('src', /-light\.webp/);
+      await expect(screenshot).toHaveJSProperty('complete', true);
+      expect(await screenshot.evaluate((image) => (image as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+    }
+    await dark.click();
+    await expect(dark).toHaveAttribute('aria-pressed', 'true');
+    await expect(gallery.locator('img').first()).toHaveAttribute('src', /-dark\.webp/);
+    await expect(page.getByRole('link', { name: /Google Play/ }).first()).toHaveAttribute('href', 'https://play.google.com/store/apps/details?id=com.alvarengadev.marketplacelist');
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  });
+}

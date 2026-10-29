@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { FaArrowRight } from 'react-icons/fa'
 import { A11y, Navigation, Pagination, Scrollbar } from 'swiper/modules'
 import { Link } from '@/i18n/routing'
+import MarketplaceProjectCover from '@/components/marketplace-list/project-cover'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -96,8 +97,8 @@ const Projects: React.FC = () => {
           return (
             <SwiperSlide key={index}>
               {item.link.startsWith('/') ? (
-                <Link href="/quem-e-o-infiltrado" className="group block flex-shrink-0 w-fit h-[395px] relative cursor-pointer">
-                  <ProjectCard item={item} />
+                <Link href={item.link} className="group block w-full max-w-[250px] h-[395px] relative cursor-pointer rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">
+                  <ProjectCard item={item} marketplace={item.link === '/marketplace-list'} />
                 </Link>
               ) : (
                 <a href={item.link} target="_blank" rel="noreferrer" className="group block flex-shrink-0 w-fit h-[395px] relative cursor-pointer">
@@ -112,9 +113,9 @@ const Projects: React.FC = () => {
   )
 }
 
-const ProjectCard = ({ item }: { item: { name: string; description: string; image: string; technologies: string[] } }) => (
+const ProjectCard = ({ item, marketplace = false }: { item: { name: string; description: string; image: string; technologies: string[] }; marketplace?: boolean }) => (
               <div className="h-full w-full relative">
-                <div className="group-hover:flex hidden flex-col justify-between bg-black bg-opacity-75 h-full w-full absolute top-0 left-0 z-10 px-4 py-6 rounded-lg">
+                <div className="group-hover:flex group-focus-visible:flex hidden flex-col justify-between bg-black bg-opacity-90 h-full w-full absolute top-0 left-0 z-10 px-4 py-6 rounded-lg">
                   <div>
                     <p className="text-white-500 text-xl font-semibold mb-3">{item.name}</p>
                     <p className="text-white-400 text-sm leading-snug">{item.description}</p>
@@ -140,13 +141,13 @@ const ProjectCard = ({ item }: { item: { name: string; description: string; imag
                   </div>
                 </div>
 
-                <Image
+                {marketplace ? <MarketplaceProjectCover /> : <Image
                   className="h-[395px] w-fit object-cover rounded-lg"
                   src={item.image}
                   alt={item.name}
                   height={395}
                   width={250}
-                />
+                />}
               </div>
 )
 
