@@ -140,7 +140,7 @@
     "titleLine1": "Quem é o",
     "titleLine2": "infiltrado?",
     "description": "Uma palavra secreta. Uma pessoa fingindo que sabe. E um grupo tentando descobrir quem está blefando.",
-    "availability": "Em breve para Android e iOS",
+    "availability": "Disponível para Android",
     "heroAlt": "Tela inicial do jogo Quem é o infiltrado?",
     "players": "4 a 10 pessoas",
     "device": "Um celular",
@@ -169,7 +169,7 @@
     "screensAltSetup": "Configuração de participantes e categoria da rodada",
     "screensAltScore": "Placar da partida",
     "ctaTitle": "Vai encarar a próxima rodada?",
-    "ctaDescription": "Reúna a turma. O jogo chega em breve.",
+    "ctaDescription": "Reúna a turma e baixe no Google Play para começar a jogar.",
     "playStore": "Google Play",
     "appStore": "App Store",
     "comingSoon": "Em breve",
@@ -177,7 +177,8 @@
     "termsLink": "Termos de uso",
     "privacyLink": "Política de Privacidade",
     "backToGame": "Voltar ao jogo",
-    "policyContents": "Nesta página"
+    "policyContents": "Nesta página",
+    "downloadNow": "Baixar agora"
   },
   "footer": {
     "message": "'Não devemos fazer coisas à espera de algo em troca. <br /> Faça o que tem de ser feito e a recompensa virá naturalmente a seu tempo.'",

@@ -140,7 +140,7 @@
     "titleLine1": "Who is the",
     "titleLine2": "infiltrator?",
     "description": "One secret word. One person pretending to know it. And a group trying to catch the bluff.",
-    "availability": "Coming soon to Android and iOS",
+    "availability": "Available for Android",
     "heroAlt": "Who is the infiltrator? game home screen",
     "players": "4 to 10 players",
     "device": "One phone",
@@ -169,7 +169,7 @@
     "screensAltSetup": "Player and round category setup",
     "screensAltScore": "Game scoreboard",
     "ctaTitle": "Ready for the next round?",
-    "ctaDescription": "Get your group together. The game is coming soon.",
+    "ctaDescription": "Get your group together and download on Google Play to start playing.",
     "playStore": "Google Play",
     "appStore": "App Store",
     "comingSoon": "Coming soon",
@@ -177,7 +177,8 @@
     "termsLink": "Terms of use (Portuguese)",
     "privacyLink": "Privacy policy (Portuguese)",
     "backToGame": "Back to the game",
-    "policyContents": "On this page"
+    "policyContents": "On this page",
+    "downloadNow": "Download now"
   },
   "footer": {
     "message": "'We should not do things expecting something in return. <br /> Do what needs to be done, and the reward will come naturally in due time.'",
