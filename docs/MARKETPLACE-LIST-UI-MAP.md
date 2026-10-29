@@ -39,3 +39,11 @@ Não foram capturados OCR, revisão de produtos reconhecidos, consentimento de a
 - `components/marketplace-list/`: capa e galeria com seleção de tema.
 - `app/[locale]/marketplace-list/page.tsx`: página Server Component e metadata.
 - `public/images/marketplace-list/`: capturas otimizadas usadas na apresentação.
+
+## Documentos legais
+
+- Política em `content/marketplace-list-privacy-policy.md`: cópia integral de `app/src/main/assets/privacy_policy.md` do projeto Android fornecido pelo usuário, com vigência em 16/07/2025 e atualização em 27/04/2026. O texto e as datas originais foram preservados.
+- Termos em `content/marketplace-list-terms-of-use.md`: versão 1.0 de 29/10/2026, redigida a partir da política fornecida, dos recursos observados e da organização dos termos do OddWord. Aborda dados locais, backup em arquivo, conferência de totais, nota fiscal em beta, serviços de terceiros e direitos legais. Não incorpora as regras exclusivas do jogo, como público 18+, dados temporários de partidas ou filtros de anúncios.
+- Rotas `marketplace-list/politica-de-privacidade` e `marketplace-list/termos-de-uso`, com conteúdo em português, índice de seções, identificação de idioma e retorno à apresentação. Links na apresentação e URLs canônicas apontam para a versão `/pt`, conforme a disponibilidade do texto legal em português.
+- `components/legal-document/index.tsx` compartilha a estrutura já existente do OddWord; cada aplicativo conserva suas cores, rótulos e destinos de navegação.
+- Referências oficiais consultadas para a redação dos termos: [ANPD — Direitos dos titulares](https://www.gov.br/anpd/pt-br/assuntos/titular-de-dados/direito-dos-titulares) e [Google — UMP e escolhas de privacidade](https://developers.google.com/admob/android/privacy).

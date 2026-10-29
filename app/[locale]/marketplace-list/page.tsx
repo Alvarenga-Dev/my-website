@@ -146,6 +146,11 @@ export default async function MarketplaceListPage() {
             <StoreLink label={t('store')} inverted />
           </div>
         </div>
+        <nav aria-label={t('legalLinksLabel')} className="mt-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm font-medium text-white-300">
+          <Link href="/marketplace-list/termos-de-uso" locale="pt" className={`rounded-sm underline decoration-white/30 underline-offset-4 hover:text-marketplace-accent ${focusStyle}`}>{t('termsLink')}</Link>
+          <span aria-hidden="true">•</span>
+          <Link href="/marketplace-list/politica-de-privacidade" locale="pt" className={`rounded-sm underline decoration-white/30 underline-offset-4 hover:text-marketplace-accent ${focusStyle}`}>{t('privacyLink')}</Link>
+        </nav>
         <footer className="mt-9 flex flex-col justify-between gap-5 text-sm text-marketplace-muted sm:flex-row sm:items-center">
           <p>{t('author')}</p>
           <Link href="/" className={`inline-flex items-center gap-2 font-semibold text-white-300 hover:text-marketplace-accent ${focusStyle}`}>{t('back')}<FaArrowRight aria-hidden="true" /></Link>

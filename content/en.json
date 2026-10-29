@@ -248,6 +248,11 @@
     "author": "An app by Lucas Alvarenga",
     "cardTagline": "Your list. Your total.",
     "cardAction": "Explore the app",
-    "cardAlt": "Marketplace List showing the current products and purchase total screen"
+    "cardAlt": "Marketplace List showing the current products and purchase total screen",
+    "privacyLink": "Privacy Policy",
+    "termsLink": "Terms of Use",
+    "legalLinksLabel": "App legal information",
+    "backToApp": "Back to Marketplace List",
+    "policyContents": "On this page"
   }
 }
