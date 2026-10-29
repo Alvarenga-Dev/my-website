@@ -5,6 +5,8 @@ import { Link } from '@/i18n/routing'
 import { FaApple, FaArrowLeft, FaArrowRight, FaGooglePlay, FaRegClock, FaUsers } from 'react-icons/fa'
 import { HiOutlineSparkles } from 'react-icons/hi2'
 
+const playStoreUrl = 'https://play.google.com/store/apps/details?id=com.alvarengadev.oddword'
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'oddword' })
@@ -51,7 +53,9 @@ const OddwordPage = async () => {
           </h1>
           <p className="mt-7 max-w-xl text-lg leading-relaxed text-[#aeb3ca] sm:text-xl">{t('description')}</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <span className="rounded-full border border-[#d4ff35]/25 bg-[#d4ff35]/10 px-4 py-2 text-sm font-semibold text-[#d4ff35]">{t('availability')}</span>
+            <a href={playStoreUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-[#d4ff35]/25 bg-[#d4ff35]/10 px-4 py-2 text-sm font-semibold text-[#d4ff35] transition hover:bg-[#d4ff35]/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d4ff35]">
+              <FaGooglePlay aria-hidden="true" />{t('availability')}
+            </a>
           </div>
 
           <div className="mt-10 grid max-w-xl grid-cols-2 gap-3 sm:grid-cols-3">
@@ -121,8 +125,8 @@ const OddwordPage = async () => {
             <p className="text-3xl font-bold tracking-tight sm:text-4xl">{t('ctaTitle')}</p>
             <p className="mx-auto mt-4 max-w-lg text-white-300">{t('ctaDescription')}</p>
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-              <StoreBadge icon={<FaGooglePlay />} store={t('playStore')} comingSoon={t('comingSoon')} />
-              <StoreBadge icon={<FaApple />} store={t('appStore')} comingSoon={t('comingSoon')} />
+              <StoreBadge icon={<FaGooglePlay />} store={t('playStore')} label={t('downloadNow')} href={playStoreUrl} />
+              <StoreBadge icon={<FaApple />} store={t('appStore')} label={t('comingSoon')} />
             </div>
             <div className="mt-6 flex flex-wrap items-center justify-center gap-2 text-sm font-medium text-white-300">
               <Link href="/quem-e-o-infiltrado/termos-de-uso" locale="pt" className="underline decoration-white/30 underline-offset-4 transition hover:text-white-500">{t('termsLink')}</Link>
@@ -169,11 +173,18 @@ const Screenshot = ({ src, alt }: { src: string; alt: string }) => (
   </figure>
 )
 
-const StoreBadge = ({ icon, store, comingSoon }: { icon: React.ReactNode; store: string; comingSoon: string }) => (
-  <div aria-label={`${store}: ${comingSoon}`} className="flex min-w-[190px] items-center gap-3 rounded-2xl border border-white/15 bg-[#0b0e1d]/70 px-5 py-3 text-left opacity-80">
+const StoreBadge = ({ icon, store, label, href }: { icon: React.ReactNode; store: string; label: string; href?: string }) => {
+  const className = `flex min-w-[190px] items-center gap-3 rounded-2xl border border-white/15 bg-[#0b0e1d]/70 px-5 py-3 text-left ${href ? 'transition hover:border-[#d4ff35]/60 hover:bg-[#d4ff35]/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d4ff35]' : 'opacity-80'}`
+  const content = <>
     <span className="text-2xl text-white-300" aria-hidden="true">{icon}</span>
-    <span><span className="block text-[10px] uppercase tracking-wider text-white-300">{store}</span><span className="block text-sm font-bold text-[#d4ff35]">{comingSoon}</span></span>
-  </div>
-)
+    <span><span className="block text-[10px] uppercase tracking-wider text-white-300">{store}</span><span className="block text-sm font-bold text-[#d4ff35]">{label}</span></span>
+  </>
+
+  return href ? (
+    <a href={href} target="_blank" rel="noopener noreferrer" aria-label={`${store}: ${label}`} className={className}>{content}</a>
+  ) : (
+    <div aria-label={`${store}: ${label}`} className={className}>{content}</div>
+  )
+}
 
 export default OddwordPage
